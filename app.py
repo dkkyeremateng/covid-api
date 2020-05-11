@@ -31,11 +31,11 @@ def get_covid_cases(url, countries, date):
         if row[3] in countries:
             covid_cases.append(
                 {
-                    "Contry": row[3],
-                    "Confirmed Cases": row[7],
+                    "Country": row[3],
+                    "Confirmed": row[7],
                     "Deaths": row[8],
                     "Recoveries": row[9],
-                    "Active Cases": row[10],
+                    "Active": row[10],
                 }
             )
     return covid_cases
