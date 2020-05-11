@@ -1,10 +1,12 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import requests
 import csv
 from io import StringIO
 import datetime
 
 app = Flask(__name__)
+CORS(app)
 
 url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/"
 countries = ["Ghana", "Togo", "Nigeria", "Benin"]
