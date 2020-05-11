@@ -9,7 +9,24 @@ app = Flask(__name__)
 CORS(app)
 
 url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/"
-countries = ["Ghana", "Togo", "Nigeria", "Benin"]
+countries = [
+    "Benin",
+    "Burkina Faso",
+    "Cape Verde",
+    "The Gambia",
+    "Ghana",
+    "Guinea",
+    "Guinea-Bissau",
+    "Ivory Coast",
+    "Liberia",
+    "Mali",
+    "Mauritania",
+    "Niger",
+    "Nigeria",
+    "Senegal",
+    "Sierra Leone",
+    "Togo",
+]
 
 
 def get_csv_data(url, date):
